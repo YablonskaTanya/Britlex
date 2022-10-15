@@ -20,33 +20,43 @@
   <body>
     <!-- header -->
     <header class="header">
-      <nav>
-        <a class="link logo" href="./index.html">Brit<span class="logo-accent">lex</span></a>
-        <ul class="list">
-          <li><a class="link nav-link" href="#">Home</a></li>
-          <li><a class="link nav-link" href="#">Skills</a></li>
-          <li><a class="link nav-link" href="#">About Us</a></li>
-          <li><a class="link nav-link" href="#">Pricing</a></li>
-          <li><a class="link nav-link" href="#">Contacts</a></li>
-        </ul>
+      <div class="container header-nav">
+        <nav class="navigation">
+          <a class="link logo" href="./index.html">Brit<span class="logo-accent">lex</span></a>
+          <ul class="list header-list">
+            <li><a class="link nav-link" href="#">Home</a></li>
+            <li><a class="link nav-link" href="#">Skills</a></li>
+            <li><a class="link nav-link" href="#">About Us</a></li>
+            <li><a class="link nav-link" href="#">Pricing</a></li>
+            <li><a class="link nav-link" href="#">Contacts</a></li>
+          </ul>
+        </nav>
         <button class="button head-button" type="button">Let’s Talk</button>
-      </nav>
+      </div>
     </header>
 
     <main>
       <!-- hero -->
 
       <section class="section hero">
-        <h1 class="hero-title">Learn Any Foreign Language</h1>
-        <p class="hero-text">
-          With our teachers who write a program for each student, you will be able to make your
-          first sketch after the first lesson.
-        </p>
-        <button class="button hero-button" type="button">Get started</button>
+        <div class="container">
+          <div class="hero-container">
+            <h1 class="hero-title">
+              Learn <br />
+              Any Foreign Language
+            </h1>
+            <p class="hero-text">
+              With our teachers who write a program for each student, you will be able to make your
+              first sketch after the first lesson.
+            </p>
+            <button class="button hero-button" type="button">Get started</button>
+          </div>
+          <!-- hero-image -->
 
-        <!-- hero-image -->
-
-        <img src="./images/learning.jpg" width="654" alt="learning" />
+          <div class="hero-img-container">
+            <img src="./images/learning.jpg" width="654" alt="learning" />
+          </div>
+        </div>
       </section>
 
       <!-- skils -->
@@ -56,7 +66,12 @@
           <h2 class="title skils-title">Skills</h2>
           <ul class="list parent">
             <li class="link skils-card item-speaking">
-              <img class="image" src="./images/sharedgoals.jpg" width="390" alt="sharedgoals" />
+              <img
+                class="image img-sharedgoals"
+                src="./images/sharedgoals.png "
+                width="390"
+                alt="shared-goals"
+              />
               <div class="skils-text-container">
                 <h3 class="skils-subtitle">Speaking</h3>
                 <p class="skils-text">
@@ -72,7 +87,12 @@
             </li>
 
             <li class="link skils-card iteam-writing">
-              <img class="image" src="./images/typewriter.jpg" width="390" alt="typewriter" />
+              <img
+                class="image img-typewriter"
+                src="./images/typewriter.png"
+                width="390"
+                alt="typewriter"
+              />
               <div class="skils-text-container">
                 <h3 class="skils-subtitle">Writing</h3>
                 <p class="skils-text">
@@ -84,7 +104,12 @@
             </li>
 
             <li class="link skils-card iteam-reading">
-              <img class="image" src="./images/bookshelves.jpg" width="390" alt="bookshelves" />
+              <img
+                class="image img-bookshelves"
+                src="./images/bookshelves.png"
+                width="390"
+                alt="bookshelves"
+              />
               <div class="skils-text-container">
                 <h3 class="skils-subtitle">Reading</h3>
                 <p class="skils-text">
@@ -96,7 +121,7 @@
             </li>
 
             <li class="link skils-card iteam-listening">
-              <img class="image" src="./images/podcast.jpg" width="408" alt="podcast" />
+              <img class="image" src="./images/podcast.png" width="408" alt="podcast" />
               <div class="skils-text-container">
                 <h3 class="skils-subtitle">Listening</h3>
                 <p class="skils-text">
@@ -113,102 +138,130 @@
       <!-- about-us -->
 
       <section class="section about-us">
-        <h2 class="title">About Us</h2>
-        <p class="about-text">
-          The model offers a framework for discussing problems related to the user's experience, as
-          well as possible ways and means of solving them. Application development begins at the top
-          level (strategy), where the future software product is described quite abstractly from the
-          point of view of the expectations of both users and the customer.
-        </p>
-        <ul class="list">
-          <li class="link">
-            <p class="number">800</p>
-            <p class="about">Pupils</p>
-          </li>
+        <div class="container about-us-container">
+          <div class="about-content">
+            <h2 class="title">About Us</h2>
+            <p class="about-text">
+              The model offers a framework for discussing problems related to the user's experience,
+              as well as possible ways and means of solving them. Application development begins at
+              the top level (strategy), where the future software product is described quite
+              abstractly from the point of view of the expectations of both users and the customer.
+            </p>
+            <ul class="list about-feature">
+              <li class="link">
+                <p class="number">800</p>
+                <p class="about">Pupils</p>
+              </li>
 
-          <li class="link">
-            <p class="number">18</p>
-            <p class="about">Teachers</p>
-          </li>
+              <li class="link">
+                <p class="number">18</p>
+                <p class="about">Teachers</p>
+              </li>
 
-          <li class="link">
-            <p class="number">6</p>
-            <p class="about">Foreign languages</p>
-          </li>
-        </ul>
+              <li class="link">
+                <p class="number">6</p>
+                <p class="about">Foreign languages</p>
+              </li>
+            </ul>
+          </div>
 
-        <!-- about-us-image -->
+          <!-- about-us-image -->
 
-        <img src="./images/business.jpg" width="540" alt="business" />
+          <div class="about-img">
+            <img src="./images/business.jpg" width="540" alt="business" />
+          </div>
+        </div>
       </section>
 
       <!-- pricing -->
 
       <section class="section pricing">
-        <h2 class="title">Pricing</h2>
-        <ul class="list">
-          <li class="link">
-            <img src="./images/online.jpg" width="426" alt="Self-study online course" />
-            <h3 class="pricing-subtitle">Self-study online course</h3>
-            <p class="pricing-text">
-              Start learning English online in live classes with qualified EC teachers and students
-              from all over the world.
-            </p>
-            <p class="price">
-              <span class="price-after">&pound;5.99</span
-              ><span class="price-before"> per month</span>
-            </p>
-          </li>
+        <div class="container">
+          <h2 class="title">Pricing</h2>
+          <ul class="list pricing-container">
+            <li class="link">
+              <div class="pricing-image">
+                <img src="./images/online.jpg" width="426" alt="Self-study online course" />
+              </div>
 
-          <li class="link">
-            <img src="./images/lesson.jpg" width="426" alt="Live online classes" />
-            <h3 class="pricing-subtitle">Live online classes</h3>
-            <p class="pricing-text">
-              Interactive group classes with expert teachers. Free 7-day trial
-            </p>
-            <p class="price">
-              <span class="price-after">&pound;12.99</span
-              ><span class="price-before"> per month</span>
-            </p>
-          </li>
+              <div class="pricing-content">
+                <h3 class="pricing-subtitle">Self-study online course</h3>
+                <p class="pricing-text">
+                  Start learning English online in live classes with qualified EC teachers and
+                  students from all over the world.
+                </p>
+                <p class="price price-first">
+                  <span class="price-after">&pound;5.99</span
+                  ><span class="price-before"> per month</span>
+                </p>
+              </div>
+            </li>
 
-          <li class="link">
-            <img src="./images/webinar.jpg" width="426" alt="Personal Tuition" />
-            <h3 class="pricing-subtitle">Personal Tuition</h3>
-            <p class="pricing-text">
-              Online one-to-one English tutoring – enjoy our first session for only $1
-            </p>
-            <p class="price">
-              <span class="price-after">&pound;12.99</span
-              ><span class="price-before"> per month</span>
-            </p>
-          </li>
-        </ul>
+            <li class="link">
+              <div class="pricing-image">
+                <img src="./images/lesson.jpg" width="426" alt="Live online classes" />
+              </div>
+
+              <div class="pricing-content">
+                <h3 class="pricing-subtitle">Live online classes</h3>
+                <p class="pricing-text">
+                  Interactive group classes with expert teachers. Free 7-day trial
+                </p>
+                <p class="price">
+                  <span class="price-after">&pound;12.99</span
+                  ><span class="price-before"> per month</span>
+                </p>
+              </div>
+            </li>
+
+            <li class="link">
+              <div class="pricing-image">
+                <img src="./images/webinar.jpg" width="426" alt="Personal Tuition" />
+              </div>
+
+              <div class="pricing-content">
+                <h3 class="pricing-subtitle">Personal Tuition</h3>
+                <p class="pricing-text">
+                  Online one-to-one English tutoring – enjoy our first session for only $1
+                </p>
+                <p class="price">
+                  <span class="price-after">&pound;12.99</span
+                  ><span class="price-before"> per month</span>
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <!-- contact-us -->
 
       <section class="section contact-us">
-        <!-- cottact-us-image -->
-
-        <img src="./images/contact.jpg" width="425" alt="contact" />
-
-        <h2 class="title">Contact Us</h2>
-        <p class="contact-text">
-          Discover your current English level by taking our free online English test. Sign up to our
-          newsletter for learning tips and free resources
-        </p>
+        <div class="container contact-container">
+          <div class="contact-image">
+            <img src="./images/contact.jpg" width="425" alt="contact" />
+          </div>
+          <div class="contact-content">
+            <h2 class="title">Contact Us</h2>
+            <p class="contact-text">
+              Discover your current English level by taking our free online English test. Sign up to
+              our newsletter for learning tips and free resources
+            </p>
+          </div>
+        </div>
       </section>
     </main>
 
     <!-- footer -->
     <footer class="footer">
-      <a class="link logo" href="./index.html">Brit<span class="logo-accent">lex</span></a>
-      <ul class="list">
-        <li><a class="link info" href="#">Terms and Conditions</a></li>
-        <li><a class="link info" href="#">Privacy Policy</a></li>
-        <li><a class="link info" href="#">Cookie Policy</a></li>
-      </ul>
+      <div class="container footer-container">
+        <a class="link logo" href="./index.html">Brit<span class="logo-accent">lex</span></a>
+        <ul class="list footer-list">
+          <li class="footer-info"><a class="link info" href="#">Terms and Conditions</a></li>
+          <li class="footer-info"><a class="link info" href="#">Privacy Policy</a></li>
+          <li class="footer-info"><a class="link info" href="#">Cookie Policy</a></li>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>
