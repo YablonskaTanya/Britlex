@@ -360,7 +360,8 @@ img {
 
 /* Footer */
 
-.footer {
+.footer .logo {
+  margin-right: 463px;
 }
 
 .footer .info {
