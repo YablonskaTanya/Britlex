@@ -382,5 +382,7 @@ img {
   gap: 80px;
 }
 
-.footer-info {
+.info {
+  padding-top: 31px;
+  padding-bottom: 83px;
 }
