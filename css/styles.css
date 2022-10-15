@@ -22,6 +22,17 @@ body {
   color: var(--primary-text-color);
   background-color: var(--primary-bg-color);
 }
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
 
 .link,
 .list {
@@ -34,6 +45,7 @@ body {
   background-color: var(--accent-bg-color);
   border-radius: 10px;
   border-color: transparent;
+  cursor: pointer;
 }
 .title {
   font-weight: 600;
@@ -41,6 +53,10 @@ body {
   line-height: calc(72 / 48);
   color: var(--secondary-text-color);
 }
+
+/* .section {
+  outline: 2px tomato dotted;
+} */
 
 /* Header */
 
@@ -190,4 +206,65 @@ body {
   line-height: calc(36 / 24);
   letter-spacing: 0.02em;
   color: inherit;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+}
+
+.item-speaking {
+  grid-area: 1 / 1 / 3 / 2;
+}
+.iteam-writing {
+  grid-area: 1 / 2 / 2 / 3;
+}
+.iteam-reading {
+  grid-area: 1 / 3 / 2 / 4;
+}
+.iteam-listening {
+  grid-area: 2 / 2 / 3 / 4;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.skils-text-container {
+  padding: 60px 18px;
+}
+
+.container {
+  width: 1378px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.skils-subtitle {
+  margin-bottom: 20px;
+}
+
+.skils-text + .skils-text {
+  margin-top: 20px;
+}
+
+.skils-button {
+  margin-top: 20px;
+}
+.item-speaking .skils-text {
+  width: 378px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.image {
+  margin-left: auto;
+  margin-right: auto;
 }

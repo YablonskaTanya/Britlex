@@ -3,11 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Britlex</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
       rel="stylesheet"
@@ -38,7 +36,7 @@
     <main>
       <!-- hero -->
 
-      <section class="hero">
+      <section class="section hero">
         <h1 class="hero-title">Learn Any Foreign Language</h1>
         <p class="hero-text">
           With our teachers who write a program for each student, you will be able to make your
@@ -53,58 +51,68 @@
 
       <!-- skils -->
 
-      <section class="skils">
-        <h2 class="title">Skills</h2>
-        <ul class="list">
-          <li class="link skils-card">
-            <img src="./images/sharedgoals.jpg" width="390" alt="sharedgoals" />
-            <h3 class="skils-subtitle">Speaking</h3>
-            <p class="skils-text">
-              Improve your English skills and confidence. Live classes and interactive lessons
-              online. 20% extra free for a limited time only
-            </p>
-            <p class="skils-text">
-              Learn English online and improve your skills through our high-quality courses and
-              resources – all designed for adult language learners.
-            </p>
-            <button class="button skils-button-first" type="button">Learn more</button>
-          </li>
+      <section class="section skils">
+        <div class="container">
+          <h2 class="title skils-title">Skills</h2>
+          <ul class="list parent">
+            <li class="link skils-card item-speaking">
+              <img class="image" src="./images/sharedgoals.jpg" width="390" alt="sharedgoals" />
+              <div class="skils-text-container">
+                <h3 class="skils-subtitle">Speaking</h3>
+                <p class="skils-text">
+                  Improve your English skills and confidence. Live classes and interactive lessons
+                  online. 20% extra free for a limited time only
+                </p>
+                <p class="skils-text">
+                  Learn English online and improve your skills through our high-quality courses and
+                  resources – all designed for adult language learners.
+                </p>
+                <button class="button skils-button" type="button">Learn more</button>
+              </div>
+            </li>
 
-          <li class="link skils-card">
-            <img src="./images/typewriter.jpg" width="390" alt="typewriter" />
-            <h3 class="skils-subtitle">Writing</h3>
-            <p class="skils-text">
-              One of the most important and extensive areas of natural science, the science that
-              studies substances, also their composition
-            </p>
-            <button class="button skils-button" type="button">Learn more</button>
-          </li>
+            <li class="link skils-card iteam-writing">
+              <img class="image" src="./images/typewriter.jpg" width="390" alt="typewriter" />
+              <div class="skils-text-container">
+                <h3 class="skils-subtitle">Writing</h3>
+                <p class="skils-text">
+                  One of the most important and extensive areas of natural science, the science that
+                  studies substances, also their composition
+                </p>
+                <button class="button skils-button" type="button">Learn more</button>
+              </div>
+            </li>
 
-          <li class="link skils-card">
-            <img src="./images/bookshelves.jpg" width="390" alt="bookshelves" />
-            <h3 class="skils-subtitle">Reading</h3>
-            <p class="skils-text">
-              Perception and response actions of the user resulting from the use and/or upcoming use
-              of the product, system or service
-            </p>
-            <button class="button skils-button" type="button">Learn more</button>
-          </li>
+            <li class="link skils-card iteam-reading">
+              <img class="image" src="./images/bookshelves.jpg" width="390" alt="bookshelves" />
+              <div class="skils-text-container">
+                <h3 class="skils-subtitle">Reading</h3>
+                <p class="skils-text">
+                  Perception and response actions of the user resulting from the use and/or upcoming
+                  use of the product, system or service
+                </p>
+                <button class="button skils-button" type="button">Learn more</button>
+              </div>
+            </li>
 
-          <li class="link skils-card">
-            <img src="./images/podcast.jpg" width="408" alt="podcast" />
-            <h3 class="skils-subtitle">Listening</h3>
-            <p class="skils-text">
-              Here you can find activities to practise your listening skills. Listening will help
-              you to improve your understanding
-            </p>
-            <button class="button skils-button" type="button">Learn more</button>
-          </li>
-        </ul>
+            <li class="link skils-card iteam-listening">
+              <img class="image" src="./images/podcast.jpg" width="408" alt="podcast" />
+              <div class="skils-text-container">
+                <h3 class="skils-subtitle">Listening</h3>
+                <p class="skils-text">
+                  Here you can find activities to practise your listening skills. Listening will
+                  help you to improve your understanding
+                </p>
+                <button class="button skils-button" type="button">Learn more</button>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <!-- about-us -->
 
-      <section class="about-us">
+      <section class="section about-us">
         <h2 class="title">About Us</h2>
         <p class="about-text">
           The model offers a framework for discussing problems related to the user's experience, as
@@ -136,7 +144,7 @@
 
       <!-- pricing -->
 
-      <section class="pricing">
+      <section class="section pricing">
         <h2 class="title">Pricing</h2>
         <ul class="list">
           <li class="link">
@@ -180,7 +188,7 @@
 
       <!-- contact-us -->
 
-      <section class="contact-us">
+      <section class="section contact-us">
         <!-- cottact-us-image -->
 
         <img src="./images/contact.jpg" width="425" alt="contact" />
