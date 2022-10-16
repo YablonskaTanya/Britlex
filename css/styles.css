@@ -34,6 +34,11 @@ ul {
   padding: 0;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+}
+
 .link,
 .list {
   list-style: none;
@@ -228,11 +233,6 @@ ul {
 }
 .item-speaking .skils-text {
   width: 378px;
-}
-
-img {
-  display: block;
-  max-width: 100%;
 }
 
 .image {
