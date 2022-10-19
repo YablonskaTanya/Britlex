@@ -385,7 +385,6 @@ img {
 .footer {
   padding-top: 22px;
   padding-bottom: 77px;
-  border-top: 1px solid #c4c4c4;
 }
 
 .footer .logo {
@@ -408,4 +407,8 @@ img {
 .footer-list {
   display: flex;
   gap: 80px;
+}
+
+.icon {
+  fill: #000000;
 }
