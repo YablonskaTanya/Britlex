@@ -433,6 +433,7 @@ img {
 .footer {
   padding-top: 22px;
   padding-bottom: 77px;
+  position: relative;
 }
 
 .footer .logo {
@@ -459,4 +460,15 @@ img {
 
 .icon {
   fill: #000000;
+}
+
+.footer-container::before {
+  display: inline-block;
+  position: absolute;
+  content: '';
+  width: 1338px;
+  height: 1px;
+  top: 0;
+
+  background: #c4c4c4;
 }
