@@ -45,10 +45,14 @@
               Learn <br />
               Any Foreign Language
             </h1>
+            <svg class="svg-hero" width="86px" height="86px">
+              <use href="./images/sprite.svg#bulb-icon"></use>
+            </svg>
             <p class="hero-text">
               With our teachers who write a program for each student, you will be able to make your
               first sketch after the first lesson.
             </p>
+
             <button class="button hero-button" type="button">Get started</button>
           </div>
           <!-- hero-image -->
@@ -242,11 +246,25 @@
             <img src="./images/contact.jpg" width="425" alt="contact" />
           </div>
           <div class="contact-content">
-            <h2 class="title">Contact Us</h2>
-            <p class="contact-text">
-              Discover your current English level by taking our free online English test. Sign up to
-              our newsletter for learning tips and free resources
-            </p>
+            <div class="contact-content-before">
+              <h2 class="title">Contact Us</h2>
+              <p class="contact-text">
+                Discover your current English level by taking our free online English test. Sign up
+                to our newsletter for learning tips and free resources
+              </p>
+            </div>
+
+            <form class="form">
+              <label class="form-label" for="email"></label>
+              <input
+                class="email"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter Your E-mail"
+              />
+              <button class="form-button" type="submit">Subscribe</button>
+            </form>
           </div>
         </div>
       </section>
