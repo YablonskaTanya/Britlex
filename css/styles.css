@@ -160,17 +160,17 @@ img {
 .hero .container {
   display: flex;
   gap: 144px;
-  position: relative;
 }
 
 .hero-container {
   width: 540px;
+  position: relative;
 }
 
 .svg-hero {
   position: absolute;
-  top: 110px;
-  left: 420px;
+  top: 120px;
+  left: 400px;
 }
 
 /* Skils */
