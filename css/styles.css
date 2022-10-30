@@ -431,8 +431,6 @@ img {
 /* Footer */
 
 .footer {
-  padding-top: 22px;
-  padding-bottom: 77px;
   position: relative;
 }
 
@@ -446,11 +444,16 @@ img {
   letter-spacing: 0.02em;
   color: inherit;
   display: block;
+  padding-top: 31px;
+  padding-bottom: 31px;
 }
 
 .footer-container {
   display: flex;
   align-items: center;
+  padding-bottom: 55px;
+
+  /* border-top: 1px solid red; */
 }
 
 .footer-list {
