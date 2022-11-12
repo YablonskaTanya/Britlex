@@ -20,18 +20,18 @@
   <body>
     <!-- header -->
     <header class="header">
-      <div class="container header-nav">
-        <nav class="navigation">
-          <a class="link logo" href="./index.html">Brit<span class="logo-accent">lex</span></a>
-          <ul class="list header-list">
-            <li><a class="link nav-link" href="#">Home</a></li>
-            <li><a class="link nav-link" href="#">Skills</a></li>
-            <li><a class="link nav-link" href="#">About Us</a></li>
-            <li><a class="link nav-link" href="#">Pricing</a></li>
-            <li><a class="link nav-link" href="#">Contacts</a></li>
+      <div class="container header-container">
+        <nav class="nav">
+          <a class="link logo" href="./index.html">Brit<span class="logo--accent">lex</span></a>
+          <ul class="nav__list">
+            <li><a class="link nav__link" href="#">Home</a></li>
+            <li><a class="link nav__link" href="#">Skills</a></li>
+            <li><a class="link nav__link" href="#">About Us</a></li>
+            <li><a class="link nav__link" href="#">Pricing</a></li>
+            <li><a class="link nav__link" href="#">Contacts</a></li>
           </ul>
         </nav>
-        <button class="button head-button" type="button">Let’s Talk</button>
+        <button class="button button-header" type="button">Let’s Talk</button>
       </div>
     </header>
 
@@ -39,25 +39,25 @@
       <!-- hero -->
 
       <section class="section hero">
-        <div class="container">
-          <div class="hero-container">
-            <h1 class="hero-title">
+        <div class="container hero__container">
+          <div class="container--first">
+            <h1 class="hero__title">
               Learn <br />
               Any Foreign Language
             </h1>
-            <svg class="svg-hero" width="86px" height="86px">
+            <svg class="svg-bulb" width="86px" height="86px">
               <use href="./images/sprite.svg#bulb-icon"></use>
             </svg>
-            <p class="hero-text">
+            <p class="hero__text">
               With our teachers who write a program for each student, you will be able to make your
               first sketch after the first lesson.
             </p>
 
-            <button class="button hero-button" type="button">Get started</button>
+            <button class="button button-hero" type="button">Get started</button>
           </div>
           <!-- hero-image -->
 
-          <div class="hero-img-container">
+          <div class="container--second">
             <img src="./images/learning.jpg" width="654" alt="learning" />
           </div>
         </div>
@@ -67,15 +67,10 @@
 
       <section class="section skils">
         <div class="container">
-          <h2 class="title skils-title">Skills</h2>
-          <ul class="list parent">
-            <li class="link skils-card item-speaking">
-              <img
-                class="image img-sharedgoals"
-                src="./images/sharedgoals.png "
-                width="390"
-                alt="shared-goals"
-              />
+          <h2 class="title skils__title">Skills</h2>
+          <ul class="parent">
+            <li class="link skils-card speaking__item">
+              <img class="image" src="./images/sharedgoals.png " width="390" alt="shared-goals" />
               <div class="skils-text-container">
                 <h3 class="skils-subtitle">Speaking</h3>
                 <p class="skils-text">
@@ -90,13 +85,8 @@
               </div>
             </li>
 
-            <li class="link skils-card iteam-writing">
-              <img
-                class="image img-typewriter"
-                src="./images/typewriter.png"
-                width="390"
-                alt="typewriter"
-              />
+            <li class="link skils-card writing__item">
+              <img class="image" src="./images/typewriter.png" width="390" alt="typewriter" />
               <div class="skils-text-container">
                 <h3 class="skils-subtitle">Writing</h3>
                 <p class="skils-text">
@@ -107,13 +97,8 @@
               </div>
             </li>
 
-            <li class="link skils-card iteam-reading">
-              <img
-                class="image img-bookshelves"
-                src="./images/bookshelves.png"
-                width="390"
-                alt="bookshelves"
-              />
+            <li class="link skils-card reading__item">
+              <img class="image" src="./images/bookshelves.png" width="390" alt="bookshelves" />
               <div class="skils-text-container">
                 <h3 class="skils-subtitle">Reading</h3>
                 <p class="skils-text">
@@ -124,7 +109,7 @@
               </div>
             </li>
 
-            <li class="link skils-card iteam-listening">
+            <li class="link skils-card listening__item">
               <img class="image" src="./images/podcast.png" width="408" alt="podcast" />
               <div class="skils-text-container">
                 <h3 class="skils-subtitle">Listening</h3>
@@ -151,7 +136,7 @@
               the top level (strategy), where the future software product is described quite
               abstractly from the point of view of the expectations of both users and the customer.
             </p>
-            <ul class="list about-feature">
+            <ul class="about-feature">
               <li class="link">
                 <p class="number">800</p>
                 <p class="about">Pupils</p>
@@ -182,7 +167,7 @@
       <section class="section pricing">
         <div class="container">
           <h2 class="title">Pricing</h2>
-          <ul class="list pricing-container">
+          <ul class="pricing-container">
             <li class="link">
               <div class="pricing-image">
                 <img src="./images/online.jpg" width="426" alt="Self-study online course" />
@@ -273,8 +258,8 @@
     <!-- footer -->
     <footer class="footer">
       <div class="container footer-container">
-        <a class="link logo" href="./index.html">Brit<span class="logo-accent">lex</span></a>
-        <ul class="list footer-list">
+        <a class="link logo" href="./index.html">Brit<span class="logo--accent">lex</span></a>
+        <ul class="footer-list">
           <li class="footer-info"><a class="link info" href="#">Terms and Conditions</a></li>
           <li class="footer-info"><a class="link info" href="#">Privacy Policy</a></li>
           <li class="footer-info"><a class="link info" href="#">Cookie Policy</a></li>

@@ -33,6 +33,7 @@ p {
 ul {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 img {
@@ -40,9 +41,7 @@ img {
   max-width: 100%;
 }
 
-.link,
-.list {
-  list-style: none;
+.link {
   text-decoration: none;
 }
 
@@ -76,11 +75,17 @@ img {
   padding-bottom: 80px;
 }
 
-/* .container {
-  outline: 2px tomato dotted;
-} */
-
 /* Header */
+
+.header-container {
+  display: flex;
+  padding-top: 55px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
 
 .logo {
   font-size: 36px;
@@ -89,11 +94,16 @@ img {
   margin-right: 236px;
 }
 
-.logo-accent {
+.logo--accent {
   color: var(--accent-logo-color);
 }
 
-.nav-link {
+.nav__list {
+  display: flex;
+  gap: 50px;
+}
+
+.nav__link {
   font-weight: 500;
   font-size: 20px;
   line-height: calc(30 / 20);
@@ -102,7 +112,7 @@ img {
   padding-bottom: 20px;
 }
 
-.head-button {
+.button-header {
   font-size: 20px;
   line-height: calc(30 / 20);
   letter-spacing: 0.03em;
@@ -117,23 +127,25 @@ img {
   margin-left: auto;
 }
 
-.header-list {
-  display: flex;
-  gap: 50px;
-}
-
-.header-nav {
-  display: flex;
-}
-
-.navigation {
-  display: flex;
-  align-items: center;
-}
-
 /* Hero */
 
-.hero-title {
+.hero__container {
+  display: flex;
+  gap: 144px;
+}
+
+.container--first {
+  width: 540px;
+  position: relative;
+}
+
+.svg-bulb {
+  position: absolute;
+  top: 120px;
+  left: 400px;
+}
+
+.hero__title {
   font-weight: 600;
   font-size: 64px;
   line-height: calc(80 / 64);
@@ -141,13 +153,13 @@ img {
   margin-bottom: 40px;
 }
 
-.hero-text {
+.hero__text {
   font-size: 24px;
   line-height: calc(36 / 24);
   margin-bottom: 60px;
 }
 
-.hero-button {
+.button-hero {
   font-size: 36px;
   line-height: calc(54 / 36);
   text-align: center;
@@ -155,22 +167,6 @@ img {
   padding-top: 23px;
   padding-bottom: 23px;
   min-width: 426px;
-}
-
-.hero .container {
-  display: flex;
-  gap: 144px;
-}
-
-.hero-container {
-  width: 540px;
-  position: relative;
-}
-
-.svg-hero {
-  position: absolute;
-  top: 120px;
-  left: 400px;
 }
 
 /* Skils */
@@ -215,23 +211,32 @@ img {
   margin-top: 60px;
 }
 
-.item-speaking {
+.speaking__item {
   grid-area: 1 / 1 / 3 / 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.iteam-writing {
+.writing__item {
   grid-area: 1 / 2 / 2 / 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.iteam-reading {
+.reading__item {
   grid-area: 1 / 3 / 2 / 4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.iteam-listening {
+.listening__item {
   grid-area: 2 / 2 / 3 / 4;
   display: flex;
   flex-direction: row-reverse;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .skils-text-container {
@@ -255,16 +260,8 @@ img {
 }
 
 .image {
-  margin-left: auto;
-  margin-right: auto;
+  padding-top: 32px;
 }
-
-.img-sharedgoals,
-.img-typewriter,
-.img-bookshelves {
-  margin-top: 32px;
-}
-
 /* About us */
 
 .about-text,
