@@ -26,6 +26,9 @@ body {
 h1,
 h2,
 h3,
+h4,
+h5,
+h6,
 p {
   margin: 0;
 }
@@ -159,7 +162,7 @@ img {
   margin-bottom: 60px;
 }
 
-.button-hero {
+.button__hero {
   font-size: 36px;
   line-height: calc(54 / 36);
   text-align: center;
@@ -171,35 +174,8 @@ img {
 
 /* Skils */
 
-.skils-subtitle {
-  font-weight: 600;
-  font-size: 30px;
-  line-height: calc(45 / 30);
-  color: var(--title-color);
-}
-
-.skils-text {
-  font-size: 16px;
-  line-height: calc(24 / 16);
-}
-
-.skils-button {
-  min-width: 218px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  text-align: center;
-}
-
-.skils-button-first {
-  min-width: 230px;
-  padding-top: 17px;
-  padding-bottom: 17px;
-  text-align: center;
-}
-
-.skils-card {
-  background: var(--secondary-bg-color);
-  border-radius: 10px;
+.image {
+  padding-top: 32px;
 }
 
 .parent {
@@ -211,67 +187,101 @@ img {
   margin-top: 60px;
 }
 
-.speaking__item {
+.card-skils {
+  background: var(--secondary-bg-color);
+  border-radius: 10px;
+}
+
+.card-skils__container {
+  padding-left: 18px;
+  padding-right: 55px;
+  padding-bottom: 32px;
+  margin-top: 24px;
+}
+
+.card-skils__speaking {
   grid-area: 1 / 1 / 3 / 2;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.writing__item {
+.card-skils__writing {
   grid-area: 1 / 2 / 2 / 3;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.reading__item {
+.card-skils__reading {
   grid-area: 1 / 3 / 2 / 4;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.listening__item {
+.card-skils__listening {
   grid-area: 2 / 2 / 3 / 4;
   display: flex;
   flex-direction: row-reverse;
-  align-items: flex-start;
+  align-items: center;
 }
 
-.skils-text-container {
-  padding: 60px 18px;
-}
-
-.skils-subtitle {
+.card-skils__subtitle {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: calc(45 / 30);
+  color: var(--title-color);
   margin-bottom: 20px;
 }
 
-.skils-text + .skils-text {
+.card-skils__text {
+  font-size: 16px;
+  line-height: calc(24 / 16);
+}
+
+.card-skils__text + .card-skils__text {
   margin-top: 20px;
 }
 
-.skils-button {
+.button__skils {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: calc(30 / 20);
+  padding: 14px 51px;
+  text-align: center;
   margin-top: 20px;
 }
 
-.item-speaking .skils-text {
-  width: 378px;
-}
-
-.image {
-  padding-top: 32px;
-}
 /* About us */
 
-.about-text,
-.pricing-text,
-.contact-text {
-  font-size: 20px;
-  line-height: calc(36 / 20);
+.about-us__container {
+  display: flex;
+  gap: 146px;
 }
 
-.number {
+.about-us__content {
+  width: 652px;
+}
+
+.about-us__title {
+  text-align: start;
+}
+
+.about-us__text {
+  font-size: 20px;
+  line-height: calc(36 / 20);
+  margin-top: 60px;
+}
+
+.feature {
+  display: flex;
+  gap: 131px;
+  margin-top: 30px;
+  justify-content: center;
+}
+
+.feature__number {
   font-weight: 600;
   font-size: 48px;
   line-height: calc(72 / 48);
@@ -280,7 +290,7 @@ img {
   color: var(--color-number);
 }
 
-.about {
+.feature__about {
   font-size: 20px;
   line-height: calc(30 / 20);
   text-align: center;
@@ -288,36 +298,30 @@ img {
   margin-top: 6px;
 }
 
-.about-text {
+/* Pricing */
+
+.pricing__container {
+  display: flex;
+  gap: 30px;
   margin-top: 60px;
 }
 
-.about-feature {
-  display: flex;
-  gap: 131px;
-  margin-top: 30px;
-  justify-content: center;
+.pricing__content {
+  margin-top: 50px;
+  width: 426px;
 }
 
-.about-us-container {
-  display: flex;
-  gap: 146px;
-}
-.about-content {
-  width: 652px;
-}
-
-.about-content .title {
-  text-align: start;
-}
-
-/* Pricing */
-
-.pricing-subtitle {
+.pricing__subtitle {
   font-weight: 600;
   font-size: 30px;
   line-height: calc(48 / 30);
   color: var(--accent-bg-color);
+}
+
+.pricing__text {
+  font-size: 20px;
+  line-height: calc(36 / 20);
+  margin-top: 20px;
 }
 
 .price {
@@ -332,69 +336,61 @@ img {
   margin-top: 30px;
 }
 
-.price-after {
+.price__after {
   font-size: 24px;
   line-height: calc(36 / 24);
 
   color: var(--accent-bg-color);
 }
 
-.price-before {
+.price__before {
   font-size: 18px;
   line-height: calc(27 / 18);
 
   color: var(--text-color);
 }
 
-.pricing-container {
-  display: flex;
-  gap: 30px;
-  margin-top: 60px;
-}
-
-.pricing-text {
-  margin-top: 20px;
-}
-
-.pricing-content {
-  margin-top: 50px;
-  width: 426px;
-}
-
-.price-after,
-.price-before {
+.price__after,
+.price__before {
   padding: 5px 0 4px 29px;
 }
 
 /* contact-us */
 
-.contact-container {
+.contact-us__container {
   display: flex;
   gap: 144px;
 }
 
-.contact-content {
+.contact-text {
+  font-size: 20px;
+  line-height: calc(36 / 20);
+}
+
+.contact-us__content {
   width: 768px;
 }
 
-.contact-content-before {
+.contact-us__content--widtn {
   width: 654px;
 }
 
-.contact-text {
+.contact-us__text {
   margin-top: 60px;
 }
 
-.contact-us .title {
+.contact-us__title {
   text-align: start;
 }
+
+/* Form */
 
 .form {
   display: flex;
   margin-top: 30px;
 }
 
-.email {
+.form__email {
   padding: 20px 30px;
 
   border: 1px solid #8f95a5;
@@ -406,7 +402,7 @@ img {
   min-width: 425px;
 }
 
-.form-button {
+.button__form {
   padding-top: 20px;
   padding-bottom: 20px;
   border-radius: 10px;
@@ -431,38 +427,13 @@ img {
   position: relative;
 }
 
-.footer .logo {
-  margin-right: 463px;
-}
-
-.footer .info {
-  font-size: 24px;
-  line-height: calc(36 / 24);
-  letter-spacing: 0.02em;
-  color: inherit;
-  display: block;
-  padding-top: 31px;
-  padding-bottom: 31px;
-}
-
-.footer-container {
+.footer__container {
   display: flex;
   align-items: center;
   padding-bottom: 55px;
-
-  /* border-top: 1px solid red; */
 }
 
-.footer-list {
-  display: flex;
-  gap: 80px;
-}
-
-.icon {
-  fill: #000000;
-}
-
-.footer-container::before {
+.footer__container::before {
   display: inline-block;
   position: absolute;
   content: '';
@@ -471,4 +442,23 @@ img {
   top: 0;
 
   background: #c4c4c4;
+}
+
+.footer__logo {
+  margin-right: 463px;
+}
+
+.footer__list {
+  display: flex;
+  gap: 80px;
+}
+
+.footer__info {
+  font-size: 24px;
+  line-height: calc(36 / 24);
+  letter-spacing: 0.02em;
+  color: inherit;
+  display: block;
+  padding-top: 31px;
+  padding-bottom: 31px;
 }
