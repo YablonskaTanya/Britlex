@@ -362,11 +362,6 @@ img {
   gap: 144px;
 }
 
-.contact-text {
-  font-size: 20px;
-  line-height: calc(36 / 20);
-}
-
 .contact-us__content {
   width: 768px;
 }
@@ -376,6 +371,8 @@ img {
 }
 
 .contact-us__text {
+  font-size: 20px;
+  line-height: calc(36 / 20);
   margin-top: 60px;
 }
 
