@@ -1,0 +1,69 @@
+.image {
+  padding-top: 32px;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+  margin-top: 60px;
+}
+
+.card-skils {
+  background: $secondary-bg-color;
+  border-radius: 10px;
+}
+
+.card-skils__container {
+  padding-left: 18px;
+  padding-right: 55px;
+  padding-bottom: 32px;
+  margin-top: 24px;
+}
+
+.card-skils__speaking {
+  grid-area: 1 / 1 / 3 / 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-skils__writing {
+  grid-area: 1 / 2 / 2 / 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-skils__reading {
+  grid-area: 1 / 3 / 2 / 4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-skils__listening {
+  grid-area: 2 / 2 / 3 / 4;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.card-skils__subtitle {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: calc(45 / 30);
+  color: $title-color;
+  margin-bottom: 20px;
+}
+
+.card-skils__text {
+  font-size: 16px;
+  line-height: calc(24 / 16);
+}
+
+.card-skils__text + .card-skils__text {
+  margin-top: 20px;
+}

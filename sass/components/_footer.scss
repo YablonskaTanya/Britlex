@@ -1,0 +1,39 @@
+.footer {
+  position: relative;
+}
+
+.footer__container {
+  display: flex;
+  align-items: center;
+  padding-bottom: 55px;
+}
+
+.footer__container::before {
+  display: inline-block;
+  position: absolute;
+  content: '';
+  width: 1338px;
+  height: 1px;
+  top: 0;
+
+  background: #c4c4c4;
+}
+
+.footer__logo {
+  margin-right: 463px;
+}
+
+.footer__list {
+  display: flex;
+  gap: 80px;
+}
+
+.footer__info {
+  font-size: 24px;
+  line-height: calc(36 / 24);
+  letter-spacing: 0.02em;
+  color: inherit;
+  display: block;
+  padding-top: 31px;
+  padding-bottom: 31px;
+}

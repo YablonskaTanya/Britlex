@@ -1,0 +1,54 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.button {
+  font-family: inherit;
+  color: $white-text-color;
+  background-color: $accent-bg-color;
+  border-radius: 10px;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: calc(72 / 48);
+  color: $secondary-text-color;
+  text-align: center;
+}
+
+.container {
+  width: 1378px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}

@@ -1,0 +1,35 @@
+.form {
+  display: flex;
+  margin-top: 30px;
+}
+
+.form__email {
+  padding: 20px 30px;
+
+  border: 1px solid #8f95a5;
+  border-radius: 10px;
+
+  font-size: 20px;
+  line-height: calc(30 / 20);
+  letter-spacing: 0.03em;
+  min-width: 425px;
+}
+
+.button__form {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+  margin-left: 30px;
+
+  border-color: transparent;
+  color: $primary-bg-color;
+  background: $accent-bg-color;
+
+  font-weight: 500;
+  font-size: 20px;
+  line-height: calc(30 / 20);
+  letter-spacing: 0.03em;
+  min-width: 312px;
+  text-align: center;
+  cursor: pointer;
+}

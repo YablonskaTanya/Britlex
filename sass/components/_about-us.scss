@@ -1,0 +1,42 @@
+.about-us__container {
+  display: flex;
+  gap: 146px;
+}
+
+.about-us__content {
+  width: 652px;
+}
+
+.about-us__title {
+  text-align: start;
+}
+
+.about-us__text {
+  font-size: 20px;
+  line-height: calc(36 / 20);
+  margin-top: 60px;
+}
+
+.feature {
+  display: flex;
+  gap: 131px;
+  margin-top: 30px;
+  justify-content: center;
+}
+
+.feature__number {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: calc(72 / 48);
+  text-align: center;
+
+  color: $color-number;
+}
+
+.feature__about {
+  font-size: 20px;
+  line-height: calc(30 / 20);
+  text-align: center;
+  width: 108px;
+  margin-top: 6px;
+}

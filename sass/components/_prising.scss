@@ -1,0 +1,54 @@
+.pricing__container {
+  display: flex;
+  gap: 30px;
+  margin-top: 60px;
+}
+
+.pricing__content {
+  margin-top: 50px;
+  width: 426px;
+}
+
+.pricing__subtitle {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: calc(48 / 30);
+  color: $accent-bg-color;
+}
+
+.pricing__text {
+  font-size: 20px;
+  line-height: calc(36 / 20);
+  margin-top: 20px;
+}
+
+.price {
+  background: $price-bg-color;
+  border-radius: 5px;
+  display: block;
+  margin-top: 66px;
+  width: 260px;
+}
+
+.price-first {
+  margin-top: 30px;
+}
+
+.price__after {
+  font-size: 24px;
+  line-height: calc(36 / 24);
+
+  color: $accent-bg-color;
+}
+
+.price__before {
+  font-size: 18px;
+  line-height: calc(27 / 18);
+
+  color: $text-color;
+}
+
+.price__after,
+.price__before {
+  padding: 5px 0 4px 29px;
+}
