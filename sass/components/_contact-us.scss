@@ -1,22 +1,45 @@
+.contact-us {
+  @media screen and (min-width: 320px) {
+    padding-bottom: 50px;
+  }
+}
+
 .contact-us__container {
-  display: flex;
-  gap: 144px;
+  @media screen and (min-width: 1378px) {
+    display: flex;
+    gap: 144px;
+  }
 }
 
 .contact-us__content {
-  width: 768px;
+  @media screen and (min-width: 1378px) {
+    width: 768px;
+  }
 }
 
 .contact-us__content--widtn {
-  width: 654px;
+  @media screen and (min-width: 1378px) {
+    width: 654px;
+  }
 }
 
 .contact-us__text {
-  font-size: 20px;
-  line-height: calc(36 / 20);
-  margin-top: 60px;
+  @media screen and (min-width: 320px) {
+    font-size: 14px;
+    line-height: calc(21 / 14);
+    text-align: center;
+    margin-top: 38px;
+  }
+
+  @media screen and (min-width: 1378px) {
+    font-size: 20px;
+    line-height: calc(36 / 20);
+    margin-top: 60px;
+  }
 }
 
 .contact-us__title {
-  text-align: start;
+  @media screen and (min-width: 1378px) {
+    text-align: start;
+  }
 }

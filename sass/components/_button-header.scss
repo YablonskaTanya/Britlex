@@ -11,4 +11,8 @@
   padding-bottom: 20px;
   min-width: 312px;
   margin-left: auto;
+
+  @media screen and(max-width:768px) {
+    display: none;
+  }
 }

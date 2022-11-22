@@ -1,54 +1,122 @@
 .pricing__container {
-  display: flex;
-  gap: 30px;
   margin-top: 60px;
+
+  @media screen and (min-width: 320px) {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  @media screen and (min-width: 1378px) {
+    display: flex;
+    gap: 30px;
+  }
 }
 
 .pricing__content {
-  margin-top: 50px;
-  width: 426px;
+  @media screen and (min-width: 1378px) {
+    margin-top: 50px;
+    width: 426px;
+  }
 }
 
 .pricing__subtitle {
   font-weight: 600;
-  font-size: 30px;
-  line-height: calc(48 / 30);
+
   color: $accent-bg-color;
+
+  @media screen and (min-width: 320px) {
+    font-size: 18px;
+    line-height: calc(28 / 18);
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  @media screen and (min-width: 1378px) {
+    font-size: 30px;
+    line-height: calc(48 / 30);
+  }
 }
 
 .pricing__text {
-  font-size: 20px;
-  line-height: calc(36 / 20);
-  margin-top: 20px;
+  @media screen and (min-width: 320px) {
+    font-size: 13px;
+    line-height: calc(20 / 13);
+    margin-top: 25px;
+    text-align: center;
+  }
+
+  @media screen and (min-width: 1378px) {
+    font-size: 20px;
+    line-height: calc(36 / 20);
+    margin-top: 20px;
+  }
 }
 
 .price {
   background: $price-bg-color;
   border-radius: 5px;
   display: block;
-  margin-top: 66px;
-  width: 260px;
+
+  @media screen and (min-width: 320px) {
+    width: 170px;
+    margin-top: 33px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 1378px) {
+    width: 260px;
+    margin-top: 66px;
+  }
 }
 
 .price-first {
-  margin-top: 30px;
+  @media screen and (min-width: 320px) {
+  }
+
+  @media screen and (min-width: 1378px) {
+    margin-top: 30px;
+  }
 }
 
 .price__after {
-  font-size: 24px;
-  line-height: calc(36 / 24);
-
   color: $accent-bg-color;
+
+  @media screen and (min-width: 320px) {
+    font-size: 18px;
+    line-height: calc(27 / 18);
+  }
+
+  @media screen and (min-width: 1378px) {
+    font-size: 24px;
+    line-height: calc(36 / 24);
+  }
 }
 
 .price__before {
-  font-size: 18px;
-  line-height: calc(27 / 18);
-
   color: $text-color;
+
+  @media screen and (min-width: 320px) {
+    font-size: 14px;
+    line-height: calc(21 / 14);
+  }
+
+  @media screen and (min-width: 1378px) {
+    font-size: 18px;
+    line-height: calc(27 / 18);
+  }
 }
 
 .price__after,
 .price__before {
-  padding: 5px 0 4px 29px;
+  @media screen and (min-width: 320px) {
+    padding: 5px 0 5px 12px;
+  }
+  @media screen and (min-width: 1378px) {
+    padding: 5px 0 4px 29px;
+  }
 }

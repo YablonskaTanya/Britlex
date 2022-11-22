@@ -17,8 +17,8 @@
     <!-- header -->
     <header class="header">
       <div class="container header__container">
+        <a class="link logo" href="./index.html">Brit<span class="logo--accent">lex</span></a>
         <nav class="nav">
-          <a class="link logo" href="./index.html">Brit<span class="logo--accent">lex</span></a>
           <ul class="nav__list">
             <li><a class="link nav__link" href="#">Home</a></li>
             <li><a class="link nav__link" href="#">Skills</a></li>
@@ -27,6 +27,11 @@
             <li><a class="link nav__link" href="#">Contacts</a></li>
           </ul>
         </nav>
+        <button class="button__header--burger" type="button">
+          <svg class="burger" width="33" height="19">
+            <use href="./images/sprite.svg#burger-menu"></use>
+          </svg>
+        </button>
         <button class="button button__header" type="button">Let’s Talk</button>
       </div>
     </header>
@@ -37,10 +42,7 @@
       <section class="section hero">
         <div class="container hero__container">
           <div class="container--first">
-            <h1 class="hero__title">
-              Learn <br />
-              Any Foreign Language
-            </h1>
+            <h1 class="hero__title">Learn Any Foreign Language</h1>
             <svg class="svg-bulb" width="86px" height="86px">
               <use href="./images/sprite.svg#bulb-icon"></use>
             </svg>
@@ -126,6 +128,10 @@
         <div class="container about-us__container">
           <div class="about-us__content">
             <h2 class="title about-us__title">About Us</h2>
+
+            <div>
+              <img src="./images/business.jpg" width="540" alt="business" />
+            </div>
             <p class="about-us__text">
               The model offers a framework for discussing problems related to the user's experience,
               as well as possible ways and means of solving them. Application development begins at
@@ -148,12 +154,6 @@
                 <p class="feature__about">Foreign languages</p>
               </li>
             </ul>
-          </div>
-
-          <!-- about-us-image -->
-
-          <div>
-            <img src="./images/business.jpg" width="540" alt="business" />
           </div>
         </div>
       </section>
@@ -223,12 +223,10 @@
 
       <section class="section contact-us">
         <div class="container contact-us__container">
-          <div class="contact__image">
-            <img src="./images/contact.jpg" width="425" alt="contact" />
-          </div>
           <div class="contact-us__content">
             <div class="contact-us__content--widtn">
               <h2 class="title contact-us__title">Contact Us</h2>
+              <img src="./images/contact.jpg" width="425" alt="contact" />
               <p class="contact-us__text">
                 Discover your current English level by taking our free online English test. Sign up
                 to our newsletter for learning tips and free resources
@@ -258,11 +256,11 @@
           >Brit<span class="logo--accent">lex</span></a
         >
         <ul class="footer__list">
-          <li class="footer-info">
+          <li class="footer__item">
             <a class="link footer__info" href="#">Terms and Conditions</a>
           </li>
-          <li><a class="link footer__info" href="#">Privacy Policy</a></li>
-          <li><a class="link footer__info" href="#">Cookie Policy</a></li>
+          <li class="footer__item"><a class="link footer__info" href="#">Privacy Policy</a></li>
+          <li class="footer__item"><a class="link footer__info" href="#">Cookie Policy</a></li>
         </ul>
       </div>
     </footer>

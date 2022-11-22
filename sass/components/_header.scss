@@ -1,4 +1,10 @@
 .header__container {
   display: flex;
-  padding-top: 55px;
+  // padding-top: 55px;
+  align-items: center;
+
+  @media screen and(min-width: 320px) {
+    padding-top: 36px;
+    padding-bottom: 29px;
+  }
 }

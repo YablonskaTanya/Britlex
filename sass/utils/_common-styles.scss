@@ -34,21 +34,59 @@ img {
 
 .title {
   font-weight: 600;
-  font-size: 48px;
-  line-height: calc(72 / 48);
+
   color: $secondary-text-color;
   text-align: center;
+
+  @media screen and (min-width: 320px) {
+    font-size: 24px;
+    line-height: calc(80 / 24);
+  }
+
+  @media screen and (min-width: 1378px) {
+    font-size: 48px;
+    line-height: calc(72 / 48);
+  }
 }
 
 .container {
-  width: 1378px;
+  // width: 1378px;
   padding-left: 20px;
   padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
+
+  @media screen and (min-width: 320px) {
+    width: 320px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  @media screen and (min-width: 575px) {
+    width: 575px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 992px) {
+    width: 992px;
+  }
+
+  @media screen and (min-width: 1378px) {
+    width: 1378px;
+  }
 }
 
 .section {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  @media screen and (min-width: 320px) {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  @media screen and (min-width: 1378px) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
 }
