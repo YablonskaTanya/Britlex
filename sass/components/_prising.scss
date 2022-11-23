@@ -1,20 +1,30 @@
 .pricing__container {
   margin-top: 60px;
+  display: flex;
 
   @media screen and (max-width: 574px) {
-    display: flex;
     flex-direction: column;
     gap: 60px;
   }
   @media screen and (min-width: 575px) {
-    display: flex;
-    flex-direction: column;
     gap: 70px;
   }
 
-  @media screen and (min-width: 1378px) {
-    display: flex;
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
+  @media screen and (min-width: 768px) {
     gap: 30px;
+    justify-content: center;
+  }
+  @media screen and (min-width: 1378px) {
+    gap: 30px;
+  }
+}
+
+.pricing__item {
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    width: 210px;
   }
 }
 
@@ -23,6 +33,11 @@
     width: 395px;
     margin-right: auto;
     margin-left: auto;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 210px;
+    flex-grow: 1;
   }
   @media screen and (min-width: 1378px) {
     margin-top: 50px;
@@ -49,6 +64,7 @@
   @media screen and (min-width: 768px) {
     font-size: 20px;
     line-height: calc(28 / 20);
+    text-align: start;
   }
   @media screen and (min-width: 992px) {
     font-size: 22px;
@@ -58,6 +74,11 @@
   @media screen and (min-width: 1378px) {
     font-size: 30px;
     line-height: calc(48 / 30);
+  }
+}
+.pricing__subtitle--width {
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    width: 110px;
   }
 }
 
@@ -117,6 +138,7 @@
   }
 
   @media screen and (min-width: 768px) {
+    margin-top: 23px;
   }
 
   @media screen and (min-width: 992px) {

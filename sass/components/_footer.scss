@@ -44,6 +44,9 @@
     left: 20px;
   }
 
+  @media screen and (min-width: 768px) {
+    width: 728px;
+  }
   @media screen and (min-width: 1378px) {
     width: 1338px;
   }
@@ -64,6 +67,7 @@
     margin-top: 15px;
     justify-content: space-between;
     align-items: baseline;
+    gap: 10px;
   }
   @media screen and (min-width: 575px) {
     display: flex;
@@ -83,8 +87,8 @@
   display: block;
 
   @media screen and (max-width: 574px) {
-    font-size: 11px;
-    line-height: calc(16 / 11);
+    font-size: 10px;
+    line-height: calc(16 / 10);
   }
 
   @media screen and (min-width: 575px) {
@@ -111,7 +115,7 @@
 }
 
 .footer__item:not(:first-child) {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 991px) {
     list-style: disc;
   }
 }
