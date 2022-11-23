@@ -1,10 +1,15 @@
 .pricing__container {
   margin-top: 60px;
 
-  @media screen and (min-width: 320px) {
+  @media screen and (max-width: 574px) {
     display: flex;
     flex-direction: column;
     gap: 60px;
+  }
+  @media screen and (min-width: 575px) {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
   }
 
   @media screen and (min-width: 1378px) {
@@ -14,6 +19,11 @@
 }
 
 .pricing__content {
+  @media screen and (min-width: 575px) {
+    width: 395px;
+    margin-right: auto;
+    margin-left: auto;
+  }
   @media screen and (min-width: 1378px) {
     margin-top: 50px;
     width: 426px;
@@ -25,11 +35,24 @@
 
   color: $accent-bg-color;
 
-  @media screen and (min-width: 320px) {
+  @media screen and (max-width: 574px) {
     font-size: 18px;
     line-height: calc(28 / 18);
     text-align: center;
     margin-top: 30px;
+  }
+  @media screen and (min-width: 575px) {
+    font-size: 24px;
+    line-height: calc(28 / 24);
+    text-align: center;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+    line-height: calc(28 / 20);
+  }
+  @media screen and (min-width: 992px) {
+    font-size: 22px;
+    line-height: calc(34 / 22);
   }
 
   @media screen and (min-width: 1378px) {
@@ -39,13 +62,28 @@
 }
 
 .pricing__text {
-  @media screen and (min-width: 320px) {
+  @media screen and (max-width: 574px) {
     font-size: 13px;
     line-height: calc(20 / 13);
     margin-top: 25px;
     text-align: center;
   }
 
+  @media screen and (min-width: 575px) {
+    font-size: 14px;
+    line-height: calc(21 / 14);
+    margin-top: 23px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-top: 15px;
+  }
+
+  @media screen and (min-width: 992px) {
+    font-size: 16px;
+    line-height: calc(24 / 16);
+    margin-top: 14px;
+  }
   @media screen and (min-width: 1378px) {
     font-size: 20px;
     line-height: calc(36 / 20);
@@ -58,16 +96,31 @@
   border-radius: 5px;
   display: block;
 
-  @media screen and (min-width: 320px) {
+  @media screen and (max-width: 574px) {
     width: 170px;
     margin-top: 33px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
   }
 
+  @media screen and (min-width: 575px) {
+    width: 205px;
+    margin-top: 31px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 992px) {
+  }
   @media screen and (min-width: 1378px) {
     width: 260px;
     margin-top: 66px;
@@ -75,7 +128,7 @@
 }
 
 .price-first {
-  @media screen and (min-width: 320px) {
+  @media screen and (max-width: 574px) {
   }
 
   @media screen and (min-width: 1378px) {
@@ -86,23 +139,46 @@
 .price__after {
   color: $accent-bg-color;
 
-  @media screen and (min-width: 320px) {
+  @media screen and (max-width: 574px) {
     font-size: 18px;
     line-height: calc(27 / 18);
   }
 
-  @media screen and (min-width: 1378px) {
+  @media screen and (min-width: 575px) {
     font-size: 24px;
     line-height: calc(36 / 24);
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 22px;
+    line-height: calc(33 / 22);
+  }
+
+  @media screen and (min-width: 992px) {
+    font-size: 24px;
+    line-height: calc(36 / 24);
+  }
+  @media screen and (min-width: 1378px) {
   }
 }
 
 .price__before {
   color: $text-color;
 
-  @media screen and (min-width: 320px) {
+  @media screen and (max-width: 574px) {
     font-size: 14px;
     line-height: calc(21 / 14);
+  }
+
+  @media screen and (min-width: 575px) {
+    font-size: 16px;
+    line-height: calc(24 / 16);
+  }
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 992px) {
   }
 
   @media screen and (min-width: 1378px) {
@@ -113,8 +189,11 @@
 
 .price__after,
 .price__before {
-  @media screen and (min-width: 320px) {
+  @media screen and (max-width: 574px) {
     padding: 5px 0 5px 12px;
+  }
+  @media screen and (min-width: 575px) {
+    padding: 6px 0;
   }
   @media screen and (min-width: 1378px) {
     padding: 5px 0 4px 29px;

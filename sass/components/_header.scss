@@ -3,8 +3,11 @@
   // padding-top: 55px;
   align-items: center;
 
-  @media screen and(min-width: 320px) {
+  @media screen and(max-width: 574px) {
     padding-top: 36px;
     padding-bottom: 29px;
+  }
+  @media screen and (min-width: 575px) {
+    padding: 39px 32px;
   }
 }

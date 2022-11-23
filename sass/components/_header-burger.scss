@@ -4,7 +4,14 @@
   margin-left: auto;
 }
 
-// .burger {
-//   border: none;
-//   background-color: transparent;
-// }
+.burger {
+  @media screen and(max-width: 574px) {
+    width: 33px;
+    height: 19px;
+  }
+
+  @media screen and(min-width: 575px) {
+    width: 42px;
+    height: 22px;
+  }
+}

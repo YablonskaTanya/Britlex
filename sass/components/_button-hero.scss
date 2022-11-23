@@ -1,17 +1,35 @@
 .button__hero {
-  font-size: 36px;
-  line-height: calc(54 / 36);
-  text-align: center;
-  letter-spacing: 0.03em;
-  // padding-top: 23px;
-  // padding-bottom: 23px;
-  // min-width: 426px;
+  font-weight: 500;
 
-  @media screen and(min-width: 320px) {
-    font-weight: 500;
+  @media screen and(max-width: 574px) {
     font-size: 16px;
     line-height: calc(24 / 16);
     padding: 18px 95px;
     margin-top: 33px;
+  }
+
+  @media screen and(min-width: 575px) {
+    font-size: 18px;
+    line-height: calc(27 / 18);
+    padding: 24px 102px;
+    margin-top: 37px;
+  }
+
+  @media screen and(min-width: 768px) {
+    padding: 19px 67px;
+  }
+
+  @media screen and(min-width: 992px) {
+    padding: 22px 79px;
+  }
+
+  @media screen and(min-width: 1378px) {
+    font-size: 36px;
+    line-height: calc(54 / 36);
+    text-align: center;
+    letter-spacing: 0.03em;
+    padding-top: 23px;
+    padding-bottom: 23px;
+    min-width: 426px;
   }
 }

@@ -1,15 +1,22 @@
-.footer {
-  position: relative;
-}
+// .footer {
+// }
 
 .footer__container {
-  @media screen and (min-width: 320px) {
-    text-align: center;
-    border-top: 1px solid #c4c4c4;
+  position: relative;
 
+  @media screen and (max-width: 574px) {
+    text-align: center;
     padding-top: 26px;
     padding-bottom: 48px;
   }
+
+  @media screen and (min-width: 575px) {
+    display: flex;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
   @media screen and (min-width: 1378px) {
     display: flex;
     align-items: center;
@@ -17,29 +24,33 @@
   }
 }
 
-// .footer__container::before {
-//   display: inline-block;
-//   position: absolute;
-//   content: '';
+.footer__container::before {
+  display: inline-block;
+  position: absolute;
+  content: '';
+  align-items: center;
+  height: 1px;
+  top: 0;
 
-//   height: 1px;
-//   top: 0;
+  background: #c4c4c4;
 
-//   background: #c4c4c4;
+  @media screen and (max-width: 574px) {
+    width: 290px;
+    left: 15px;
+  }
 
-//   @media screen and (min-width: 320px) {
-//     width: 290px;
+  @media screen and (min-width: 575px) {
+    width: 535px;
+    left: 20px;
+  }
 
-//     left: 15px;
-//   }
-
-//   @media screen and (min-width: 1378px) {
-//     width: 1338px;
-//   }
-// }
+  @media screen and (min-width: 1378px) {
+    width: 1338px;
+  }
+}
 
 .footer__logo {
-  @media screen and (min-width: 320px) {
+  @media screen and (max-width: 574px) {
   }
 
   @media screen and (min-width: 1378px) {
@@ -48,12 +59,19 @@
 }
 
 .footer__list {
-  @media screen and (min-width: 320px) {
+  @media screen and (max-width: 574px) {
     display: flex;
-    width: 294px;
     margin-top: 15px;
     justify-content: space-between;
+    align-items: baseline;
   }
+  @media screen and (min-width: 575px) {
+    display: flex;
+    margin-left: auto;
+    gap: 20px;
+    align-items: center;
+  }
+
   @media screen and (min-width: 1378px) {
     display: flex;
     gap: 80px;
@@ -64,17 +82,36 @@
   color: inherit;
   display: block;
 
-  @media screen and (min-width: 320px) {
-    font-weight: 500;
+  @media screen and (max-width: 574px) {
     font-size: 11px;
     line-height: calc(16 / 11);
   }
 
+  @media screen and (min-width: 575px) {
+    font-size: 12px;
+    line-height: calc(18 / 12);
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 13px;
+    line-height: calc(20 / 13);
+  }
+
+  @media screen and (min-width: 992px) {
+    font-size: 16px;
+    line-height: calc(24 / 16);
+  }
   @media screen and (min-width: 1378px) {
     font-size: 24px;
     line-height: calc(36 / 24);
     letter-spacing: 0.02em;
     padding-top: 31px;
     padding-bottom: 31px;
+  }
+}
+
+.footer__item:not(:first-child) {
+  @media screen and (max-width: 767px) {
+    list-style: disc;
   }
 }

@@ -18,7 +18,7 @@
 }
 
 .about-us__text {
-  @media screen and (min-width: 320px) {
+  @media screen and (max-width: 574px) {
     font-size: 13px;
     line-height: calc(20 / 13);
     text-align: center;
@@ -27,8 +27,14 @@
 
   @media screen and (min-width: 575px) {
     font-size: 14px;
-
     line-height: calc(21 / 14);
+    text-align: center;
+    // width: 510px;
+  }
+
+  @media screen and (min-width: 992px) {
+    font-size: 16px;
+    line-height: calc(24 / 16);
   }
 
   @media screen and (min-width: 1378px) {
@@ -39,6 +45,10 @@
 }
 
 .feature {
+  @media screen and (min-width: 575px) {
+    display: flex;
+    justify-content: space-around;
+  }
   @media screen and (min-width: 1378px) {
     display: flex;
     gap: 131px;
@@ -49,16 +59,15 @@
 
 .feature__number {
   font-weight: 600;
-
   text-align: center;
-
   color: $color-number;
 
-  @media screen and (min-width: 320px) {
+  @media screen and (max-width: 991px) {
     font-size: 24px;
     line-height: calc(80 / 24);
   }
-
+  @media screen and (min-width: 575px) {
+  }
   @media screen and (min-width: 1378px) {
     font-size: 48px;
     line-height: calc(72 / 48);
@@ -68,9 +77,21 @@
 .feature__about {
   text-align: center;
 
-  @media screen and (min-width: 320px) {
+  @media screen and (max-width: 574px) {
     font-size: 13px;
     line-height: calc(20 / 13);
+  }
+  @media screen and (min-width: 575px) {
+    font-size: 14px;
+    line-height: calc(21 / 14);
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 13px;
+    line-height: calc(20 / 13);
+  }
+  @media screen and (min-width: 992px) {
+    font-size: 16px;
+    line-height: calc(24 / 16);
   }
 
   @media screen and (min-width: 1378px) {
