@@ -16,6 +16,10 @@
     padding-top: 25px;
     padding-bottom: 25px;
   }
+  @media screen and (min-width: 992px) {
+    padding-top: 22px;
+    padding-bottom: 24px;
+  }
 
   @media screen and (min-width: 1378px) {
     display: flex;
@@ -47,6 +51,11 @@
   @media screen and (min-width: 768px) {
     width: 728px;
   }
+
+  @media screen and (min-width: 992px) {
+    width: 950px;
+  }
+
   @media screen and (min-width: 1378px) {
     width: 1338px;
   }
@@ -115,7 +124,7 @@
 }
 
 .footer__item:not(:first-child) {
-  @media screen and (max-width: 991px) {
+  @media screen and (max-width: 1377px) {
     list-style: disc;
   }
 }

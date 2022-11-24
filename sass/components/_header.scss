@@ -8,9 +8,15 @@
     padding-bottom: 29px;
   }
   @media screen and (min-width: 575px) {
-    padding: 39px 32px;
+    padding-top: 39px;
   }
   @media screen and (min-width: 768px) {
-    padding: 39px;
+    padding-top: 39px;
+  }
+  @media screen and (min-width: 992px) {
+    padding-top: 30px;
+  }
+  @media screen and (min-width: 1378px) {
+    padding-top: 63px;
   }
 }

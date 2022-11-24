@@ -7,12 +7,19 @@
   border-radius: 10px;
   background-color: transparent;
   text-align: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  min-width: 312px;
+
   margin-left: auto;
 
   @media screen and(max-width:991px) {
     display: none;
+  }
+  @media screen and(min-width:992px) {
+    min-width: 160px;
+    padding: 8px 30px;
+  }
+  @media screen and(min-width:1378px) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    min-width: 312px;
   }
 }

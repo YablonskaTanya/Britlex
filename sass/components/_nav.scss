@@ -5,18 +5,37 @@
   @media screen and (max-width: 991px) {
     display: none;
   }
+  @media screen and (min-width: 992px) and (max-width: 1377px) {
+    margin-left: 167px;
+  }
 }
 
 .nav__list {
   display: flex;
-  gap: 50px;
+
+  @media screen and (min-width: 992px) {
+    gap: 30px;
+  }
+
+  @media screen and (min-width: 1378px) {
+    gap: 50px;
+  }
 }
 
 .nav__link {
   font-weight: 500;
-  font-size: 20px;
-  line-height: calc(30 / 20);
+
   color: $title-color;
-  padding-top: 20px;
-  padding-bottom: 20px;
+
+  @media screen and (min-width: 992px) {
+    font-size: 16px;
+    line-height: calc(24 / 16);
+  }
+
+  @media screen and (min-width: 1378px) {
+    font-size: 20px;
+    line-height: calc(30 / 20);
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 }
