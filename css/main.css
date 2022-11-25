@@ -411,7 +411,7 @@ img {
   }
 }
 
-.button__header--burger {
+.button-menu__open {
   border: none;
   background-color: transparent;
   margin-left: auto;
@@ -1553,6 +1553,12 @@ img {
 @media screen and (min-width: 768px) {
   .contact-us__container {
     padding-bottom: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
   }
 }
 @media screen and (min-width: 1378px) {
@@ -1581,15 +1587,19 @@ img {
             align-items: flex-end;
   }
 }
+@media screen and (min-width: 992px) {
+  .contact-us__content {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
 @media screen and (min-width: 1378px) {
   .contact-us__content {
     width: 768px;
-  }
-}
-
-@media screen and (min-width: 1378px) {
-  .contact-us__content--widtn {
-    width: 654px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
 
@@ -1625,6 +1635,7 @@ img {
   .contact-us__text {
     font-size: 16px;
     line-height: 1.5;
+    margin-left: 0;
   }
 }
 @media screen and (min-width: 1378px) {
@@ -1632,6 +1643,8 @@ img {
     font-size: 20px;
     line-height: 1.5;
     margin-top: 60px;
+    width: 654px;
+    margin-left: 0;
   }
 }
 
@@ -1939,4 +1952,58 @@ img {
   .footer__item:not(:first-child) {
     list-style: disc;
   }
+}
+
+.menu-container {
+  position: absolute;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform 250ms linear;
+  transition: -webkit-transform 250ms linear;
+  transition: transform 250ms linear;
+  transition: transform 250ms linear, -webkit-transform 250ms linear;
+}
+
+.menu-container.is-open {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.menu-container__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  padding: 35px 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.menu-container__header::after {
+  content: "";
+  position: absolute;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 1px;
+  bottom: 0;
+  width: 290px;
+  background: #c4c4c4;
+}
+
+.button-menu__close {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  border-radius: transparent;
 }/*# sourceMappingURL=main.css.map */
