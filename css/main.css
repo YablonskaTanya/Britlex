@@ -804,9 +804,25 @@ img {
   }
 }
 
+.image {
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 574px) and (max-width: 768px) {
+  .image {
+    width: 185px;
+  }
+}
 @media screen and (min-width: 1378px) {
   .image {
     padding-top: 32px;
+  }
+}
+
+@media screen and (min-width: 574px) and (max-width: 768px) {
+  .image--padding {
+    padding-top: 40px;
+    padding-bottom: 30px;
   }
 }
 
@@ -855,9 +871,10 @@ img {
   background: #f5f5f5;
   border-radius: 10px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 575px) and (max-width: 767px) {
   .card-skils {
     width: 240px;
+    height: 543px;
   }
 }
 
@@ -969,7 +986,7 @@ img {
   font-weight: 600;
   color: #263238;
 }
-@media screen and (max-width: 574px) {
+@media screen and (max-width: 767px) {
   .card-skils__subtitle {
     font-size: 18px;
     line-height: 4.4444444444;
@@ -1067,6 +1084,25 @@ img {
   }
 }
 
+@media screen and (min-width: 574px) and (max-width: 768px) {
+  .button__skils--first {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 574px) and (max-width: 768px) {
+  .button__skils--second {
+    margin-top: 100px;
+  }
+}
+
+@media screen and (min-width: 574px) and (max-width: 768px) {
+  .button__skils--third,
+.button__skils--fourth {
+    margin-top: 185px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .about-us__container {
     display: -webkit-box;
@@ -1122,6 +1158,20 @@ img {
   }
 }
 
+.about-us__image {
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (miax-width: 574px) {
+  .about-us__image {
+    width: 283px;
+  }
+}
+@media screen and (min-width: 575px) {
+  .about-us__image {
+    width: 352px;
+  }
+}
 @media screen and (min-width: 768px) {
   .about-us__image {
     width: 295px;

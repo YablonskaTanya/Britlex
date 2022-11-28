@@ -1,6 +1,20 @@
 .image {
+  margin-left: auto;
+  margin-right: auto;
+  // padding-top: 30px;
+
+  @media screen and (min-width: 574px) and (max-width: 768px) {
+    width: 185px;
+  }
   @media screen and (min-width: 1378px) {
     padding-top: 32px;
+  }
+}
+
+.image--padding {
+  @media screen and (min-width: 574px) and (max-width: 768px) {
+    padding-top: 40px;
+    padding-bottom: 30px;
   }
 }
 
@@ -35,8 +49,9 @@
   background: $secondary-bg-color;
   border-radius: 10px;
 
-  @media screen and(max-width: 767px) {
+  @media screen and(min-width: 575px) and(max-width: 767px) {
     width: 240px;
+    height: 543px;
   }
 }
 
@@ -114,7 +129,7 @@
   font-weight: 600;
   color: $title-color;
 
-  @media screen and (max-width: 574px) {
+  @media screen and (max-width: 767px) {
     font-size: 18px;
     line-height: calc(80 / 18);
   }
