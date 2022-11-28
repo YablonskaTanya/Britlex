@@ -416,22 +416,22 @@ img {
   background-color: transparent;
   margin-left: auto;
 }
+@media screen and (min-width: 992px) {
+  .button-menu__open {
+    display: none;
+  }
+}
 
 @media screen and (max-width: 574px) {
-  .burger {
+  .button-menu__icon--open {
     width: 33px;
     height: 19px;
   }
 }
 @media screen and (min-width: 575px) {
-  .burger {
+  .button-menu__icon--open {
     width: 42px;
     height: 22px;
-  }
-}
-@media screen and (min-width: 992px) {
-  .burger {
-    display: none;
   }
 }
 
@@ -727,6 +727,39 @@ img {
     line-height: 1.5;
     margin-bottom: 60px;
   }
+}
+
+@media screen and (min-width: 320px) {
+  .hero-image {
+    width: 299px;
+  }
+}
+@media screen and (min-width: 575px) {
+  .hero-image {
+    width: 424px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero-image {
+    width: 352px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .hero-image {
+    width: 460px;
+  }
+}
+@media screen and (min-width: 1378px) {
+  .hero-image {
+    width: 654px;
+  }
+}
+
+.pricing-img {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .button__hero {
@@ -1654,12 +1687,34 @@ img {
   }
 }
 
+@media screen and (min-width: 320px) {
+  .contact-us__image {
+    width: 253px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 575px) {
+  .contact-us__image {
+    width: 335px;
+  }
+}
 @media screen and (min-width: 768px) {
   .contact-us__image {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 30px;
+    left: 50px;
+    width: 260px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .contact-us__image {
     width: 312px;
+  }
+}
+@media screen and (min-width: 1378px) {
+  .contact-us__image {
+    width: 425px;
   }
 }
 
@@ -1995,6 +2050,17 @@ img {
   bottom: 0;
   width: 290px;
   background: #c4c4c4;
+}
+@media screen and (min-width: 575px) {
+  .menu-container__header {
+    width: 42px;
+    height: 22px;
+  }
+}
+@media screen and (min-width: 575px) {
+  .menu-container__header::after {
+    width: 510px;
+  }
 }
 
 .button-menu__close {
