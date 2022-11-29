@@ -37,20 +37,34 @@
 }
 
 .button__skils--first {
-  @media screen and (min-width: 574px) and (max-width: 768px) {
+  @media screen and (min-width: 574px) and (max-width: 767px) {
     margin-top: 20px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    margin-top: 180px;
   }
 }
 
 .button__skils--second {
-  @media screen and (min-width: 574px) and (max-width: 768px) {
+  @media screen and (min-width: 574px) and (max-width: 767px) {
     margin-top: 100px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    margin-top: 83px;
   }
 }
 
-.button__skils--third,
+.button__skils--third {
+  @media screen and (min-width: 574px) and (max-width: 767px) {
+    margin-top: 185px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    margin-top: 83px;
+  }
+}
+
 .button__skils--fourth {
-  @media screen and (min-width: 574px) and (max-width: 768px) {
+  @media screen and (min-width: 574px) and (max-width: 767px) {
     margin-top: 185px;
   }
 }

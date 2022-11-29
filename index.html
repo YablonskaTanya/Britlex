@@ -21,10 +21,10 @@
         <nav class="nav">
           <ul class="nav__list">
             <li><a class="link nav__link" href="#">Home</a></li>
-            <li><a class="link nav__link" href="#">Skills</a></li>
-            <li><a class="link nav__link" href="#">About Us</a></li>
-            <li><a class="link nav__link" href="#">Pricing</a></li>
-            <li><a class="link nav__link" href="#">Contacts</a></li>
+            <li><a class="link nav__link" href="#skills">Skills</a></li>
+            <li><a class="link nav__link" href="#about">About Us</a></li>
+            <li><a class="link nav__link" href="#pricing">Pricing</a></li>
+            <li><a class="link nav__link" href="#contacts">Contacts</a></li>
           </ul>
         </nav>
         <button
@@ -74,7 +74,7 @@
 
       <!-- skils -->
 
-      <section class="section skils">
+      <section class="section skils" id="skills">
         <div class="container">
           <h2 class="title skils__title">Skills</h2>
           <ul class="parent">
@@ -148,7 +148,7 @@
 
       <!-- about-us -->
 
-      <section class="section about-us">
+      <section class="section about-us" id="about">
         <div class="container about-us__container">
           <div class="about-us__image">
             <img src="./images/business.jpg" width="540" alt="business" />
@@ -183,7 +183,7 @@
 
       <!-- pricing -->
 
-      <section class="section pricing">
+      <section class="section pricing" id="pricing">
         <div class="container">
           <h2 class="title">Pricing</h2>
           <ul class="pricing__container">
@@ -259,7 +259,7 @@
 
       <!-- contact-us -->
 
-      <section class="section contact-us">
+      <section class="section contact-us" id="contacts">
         <div class="container contact-us__container">
           <div class="contact-us__content">
             <div class="contact-us__content--widtn">
@@ -306,28 +306,34 @@
     <!-- mobile-menu -->
 
     <div class="container menu-container js-menu-container" id="mobile-menu">
-      <div class="menu-container__header">
-        <a class="link logo" href="./index.html">Brit<span class="logo--accent">lex</span></a>
-        <button class="button-menu__close js-close-menu" type="button">
-          <svg
-            class="button-menu__icon button-menu__icon--close"
-            width="40"
-            height="40"
-            aria-label="Перемикач мобільного меню"
-          >
-            <use class="icon-cross" href="./images/sprite.svg#cross"></use>
-          </svg>
-        </button>
+      <div>
+        <div class="menu-container__header">
+          <a class="link logo" href="./index.html">Brit<span class="logo--accent">lex</span></a>
+          <button class="button-menu__close js-close-menu" type="button">
+            <svg
+              class="button-menu__icon button-menu__icon--close"
+              width="40"
+              height="40"
+              aria-label="Перемикач мобільного меню"
+            >
+              <use class="icon-cross" href="./images/sprite.svg#cross"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="nav-menu__container">
+          <nav class="nav-menu">
+            <ul class="nav-menu__list">
+              <li><a class="link nav-menu__link" href="#">Home</a></li>
+              <li><a class="link nav-menu__link" href="#skills">Skills</a></li>
+              <li><a class="link nav-menu__link" href="#about">About Us</a></li>
+              <li><a class="link nav-menu__link" href="#pricing">Pricing</a></li>
+              <li><a class="link nav-menu__link" href="#contacts">Contacts</a></li>
+            </ul>
+          </nav>
+
+          <button class="button button__menu" type="button">Let’s Talk</button>
+        </div>
       </div>
-      <nav class="nav">
-        <ul class="nav__list">
-          <li><a class="link nav__link" href="#">Home</a></li>
-          <li><a class="link nav__link" href="#">Skills</a></li>
-          <li><a class="link nav__link" href="#">About Us</a></li>
-          <li><a class="link nav__link" href="#">Pricing</a></li>
-          <li><a class="link nav__link" href="#">Contacts</a></li>
-        </ul>
-      </nav>
     </div>
     <script src="./js/mobile-menu.js"></script>
   </body>
